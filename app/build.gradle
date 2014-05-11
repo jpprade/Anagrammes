@@ -1,0 +1,35 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 15
+    buildToolsVersion "19.0.3"
+
+    defaultConfig {
+        minSdkVersion 3
+        targetSdkVersion 3
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+
+    signingConfigs {
+
+        release {
+            storeFile file("/home/jpprade/dev/keys/anagrammes.keystore")
+            storePassword "bonjour"
+            keyAlias "anagrammes"
+            keyPassword "bonjour"
+        }
+    }
+
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+}

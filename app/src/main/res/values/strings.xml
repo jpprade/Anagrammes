@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Anagrammes </string>
+    <string name="app_name">Anagrammes</string>
+    <string name="aide">Tappez une liste de lettre pour trouver les anagrammes comprenant ces lettres</string>
+    <string name="resultTitle">Résultats</string>
+    <string name="txtnbmin">Nombre minimum de lettres</string>
+    <string name="txtnbmax">Nombre maximum de lettres</string>
+</resources>
